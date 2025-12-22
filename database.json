@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "driver": "pg",
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "postgres",
+    "database": "nestjs_example"
+  },
+  "test": {
+    "driver": "pg",
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "postgres",
+    "database": "nestjs_example_test"
+  },
+  "prod": {
+    "driver": "pg",
+    "host": "${DB_HOST}",
+    "port": "${DB_PORT}",
+    "user": "${DB_USERNAME}",
+    "password": "${DB_PASSWORD}",
+    "database": "${DB_NAME}"
+  }
+}
